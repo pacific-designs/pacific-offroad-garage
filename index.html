@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pacific Off Road Garage | Can-Am · Polaris RZR · ATV · UTV</title>
+  <meta name="description" content="Pacific Off Road Garage — Venta de vehículos usados, accesorios, llantas, refacciones y servicio de mantenimiento a domicilio. Can-Am, Polaris RZR, ATVs, UTVs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;0,900;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon">⚙</span>
+        <div class="logo-text">
+          <span class="logo-main">PACIFIC</span>
+          <span class="logo-sub">OFF ROAD GARAGE</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#inventario">Inventario</a></li>
+        <li><a href="#accesorios">Accesorios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="https://wa.me/523221003855?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank" class="btn-nav-wa">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <!-- COLOCA TU IMAGEN PRINCIPAL AQUÍ: reemplaza el src con images/hero.jpg -->
+      <img src="images/hero.jpg" alt="Pacific Off Road Garage" class="hero-img" id="heroBgImg"
+           onerror="this.style.display='none'">
+      <div class="hero-overlay"></div>
+      <div class="hero-particles" id="particles"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">EXPERTOS EN TERRENO EXTREMO</div>
+      <h1 class="hero-title reveal-up">
+        <span class="line1">PACIFIC</span>
+        <span class="line2">OFF ROAD</span>
+        <span class="line3">GARAGE</span>
+      </h1>
+      <p class="hero-desc reveal-up">Can-Am · Polaris RZR · ATVs · Side by Side · UTV<br>Venta · Accesorios · Refacciones · Mantenimiento a Domicilio</p>
+      <div class="hero-ctas reveal-up">
+        <a href="#inventario" class="btn-primary">Ver Inventario</a>
+        <a href="https://wa.me/523221003855?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20veh%C3%ADculos" target="_blank" class="btn-secondary">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Cotizar Ahora
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ STATS BAR ═══════════════════════════ -->
+  <section class="stats-bar">
+    <div class="stats-container">
+      <div class="stat-item" data-target="500">
+        <span class="stat-num" data-count="500">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Clientes Satisfechos</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" data-target="120">
+        <span class="stat-num" data-count="120">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Vehículos Vendidos</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" data-target="5">
+        <span class="stat-num" data-count="5">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Años de Experiencia</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" data-target="300">
+        <span class="stat-num" data-count="300">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Servicios Realizados</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ SERVICIOS ═══════════════════════════ -->
+  <section id="servicios" class="section-dark">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Lo que hacemos</span>
+        <h2 class="section-title">NUESTROS <span class="highlight">SERVICIOS</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal-up" onclick="openWhatsApp('Hola, me interesa información sobre venta de vehículos usados')">
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/><path d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/></svg>
+          </div>
+          <h3>Vehículos Usados</h3>
+          <p>Can-Am, Polaris RZR, cuatrimotos, side-by-side y UTVs revisados, certificados y listos para conquistar cualquier terreno.</p>
+          <div class="service-cta">Cotizar <span>→</span></div>
+        </div>
+
+        <div class="service-card reveal-up" onclick="openWhatsApp('Hola, quiero ver los accesorios disponibles')">
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3>Accesorios Nuevos</h3>
+          <p>Equipamiento de alta performance: jaulas, windshields, luces LED, sistemas de audio, racks y más. Todo nuevo y de calidad.</p>
+          <div class="service-cta">Ver catálogo <span>→</span></div>
+        </div>
+
+        <div class="service-card reveal-up" onclick="openWhatsApp('Hola, necesito información sobre llantas')">
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>
+          </div>
+          <h3>Llantas Off-Road</h3>
+          <p>Las mejores marcas en llantas todo terreno. Mud, Rock, Sand y All-Terrain para cualquier condición extrema que enfrentes.</p>
+          <div class="service-cta">Ver opciones <span>→</span></div>
+        </div>
+
+        <div class="service-card reveal-up" onclick="openWhatsApp('Hola, busco refacciones para mi vehículo')">
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Refacciones</h3>
+          <p>Piezas originales y aftermarket para Can-Am, Polaris RZR, Honda, Yamaha y más marcas. Stock disponible o pedido especial.</p>
+          <div class="service-cta">Buscar pieza <span>→</span></div>
+        </div>
+
+        <div class="service-card reveal-up" onclick="openWhatsApp('Hola, quiero agendar un servicio de mantenimiento a domicilio')">
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          </div>
+          <h3>Mantenimiento a Domicilio</h3>
+          <p>Vamos a donde estás. Servicio de mantenimiento preventivo y correctivo directo en tu casa, rancho o punto de trail.</p>
+          <div class="service-cta">Agendar visita <span>→</span></div>
+        </div>
+
+        <div class="service-card reveal-up card-highlight" onclick="openWhatsApp('Hola, quiero información general sobre Pacific Off Road Garage')">
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+          </div>
+          <h3>Asesoría Personalizada</h3>
+          <p>¿No sabes cuál vehículo o accesorio es el ideal para ti? Te asesoramos sin costo para que tomes la mejor decisión.</p>
+          <div class="service-cta">Hablar con un experto <span>→</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ INVENTARIO ═══════════════════════════ -->
+  <section id="inventario" class="section-darker">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Disponible ahora</span>
+        <h2 class="section-title">INVENTARIO <span class="highlight">DESTACADO</span></h2>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="filter-tabs reveal-up">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="canam">Can-Am</button>
+        <button class="filter-btn" data-filter="polaris">Polaris RZR</button>
+        <button class="filter-btn" data-filter="atv">ATV / Cuatrimoto</button>
+        <button class="filter-btn" data-filter="utv">UTV / Side by Side</button>
+      </div>
+
+      <div class="inventory-grid" id="inventoryGrid">
+
+        <!-- VEHÍCULO 1 — Reemplaza images/vehicle1.jpg con tu foto -->
+        <div class="vehicle-card reveal-up" data-category="canam">
+          <div class="vehicle-img-wrap">
+            <img src="images/vehicle1.jpg" alt="Can-Am Maverick X3" onerror="this.parentElement.classList.add('no-img')">
+            <div class="vehicle-badge">DISPONIBLE</div>
+            <div class="vehicle-overlay">
+              <button onclick="openWhatsApp('Hola, me interesa el Can-Am Maverick X3, ¿está disponible?')">Ver detalles</button>
+            </div>
+          </div>
+          <div class="vehicle-info">
+            <span class="vehicle-brand">Can-Am</span>
+            <h3 class="vehicle-name">Maverick X3 Turbo</h3>
+            <div class="vehicle-specs">
+              <span>2022</span>
+              <span>195 HP</span>
+              <span>Side by Side</span>
+            </div>
+            <div class="vehicle-footer">
+              <span class="vehicle-price">Consultar precio</span>
+              <button class="btn-wa-small" onclick="openWhatsApp('Hola, me interesa el Can-Am Maverick X3 Turbo 2022, ¿está disponible?')">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Cotizar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- VEHÍCULO 2 -->
+        <div class="vehicle-card reveal-up" data-category="polaris">
+          <div class="vehicle-img-wrap">
+            <img src="images/vehicle2.jpg" alt="Polaris RZR" onerror="this.parentElement.classList.add('no-img')">
+            <div class="vehicle-badge">DISPONIBLE</div>
+            <div class="vehicle-overlay">
+              <button onclick="openWhatsApp('Hola, me interesa el Polaris RZR Pro XP, ¿está disponible?')">Ver detalles</button>
+            </div>
+          </div>
+          <div class="vehicle-info">
+            <span class="vehicle-brand">Polaris</span>
+            <h3 class="vehicle-name">RZR Pro XP</h3>
+            <div class="vehicle-specs">
+              <span>2021</span>
+              <span>181 HP</span>
+              <span>Side by Side</span>
+            </div>
+            <div class="vehicle-footer">
+              <span class="vehicle-price">Consultar precio</span>
+              <button class="btn-wa-small" onclick="openWhatsApp('Hola, me interesa el Polaris RZR Pro XP 2021, ¿está disponible?')">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Cotizar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- VEHÍCULO 3 -->
+        <div class="vehicle-card reveal-up" data-category="atv">
+          <div class="vehicle-img-wrap">
+            <img src="images/vehicle3.jpg" alt="Can-Am Outlander" onerror="this.parentElement.classList.add('no-img')">
+            <div class="vehicle-badge sold">VENDIDO</div>
+            <div class="vehicle-overlay sold-overlay">
+              <span>VENDIDO</span>
+            </div>
+          </div>
+          <div class="vehicle-info">
+            <span class="vehicle-brand">Can-Am</span>
+            <h3 class="vehicle-name">Outlander 1000R</h3>
+            <div class="vehicle-specs">
+              <span>2020</span>
+              <span>91 HP</span>
+              <span>ATV</span>
+            </div>
+            <div class="vehicle-footer">
+              <span class="vehicle-price sold-txt">Vendido</span>
+              <button class="btn-wa-small" onclick="openWhatsApp('Hola, ¿tienen algo similar al Can-Am Outlander 1000R?')">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Similar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- VEHÍCULO 4 -->
+        <div class="vehicle-card reveal-up" data-category="utv">
+          <div class="vehicle-img-wrap">
+            <img src="images/vehicle4.jpg" alt="Polaris General" onerror="this.parentElement.classList.add('no-img')">
+            <div class="vehicle-badge">DISPONIBLE</div>
+            <div class="vehicle-overlay">
+              <button onclick="openWhatsApp('Hola, me interesa el Polaris General XP 1000, ¿cuál es el precio?')">Ver detalles</button>
+            </div>
+          </div>
+          <div class="vehicle-info">
+            <span class="vehicle-brand">Polaris</span>
+            <h3 class="vehicle-name">General XP 1000</h3>
+            <div class="vehicle-specs">
+              <span>2023</span>
+              <span>100 HP</span>
+              <span>UTV</span>
+            </div>
+            <div class="vehicle-footer">
+              <span class="vehicle-price">Consultar precio</span>
+              <button class="btn-wa-small" onclick="openWhatsApp('Hola, me interesa el Polaris General XP 1000 2023, ¿cuál es el precio?')">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Cotizar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- VEHÍCULO 5 -->
+        <div class="vehicle-card reveal-up" data-category="canam">
+          <div class="vehicle-img-wrap">
+            <img src="images/vehicle5.jpg" alt="Can-Am Defender" onerror="this.parentElement.classList.add('no-img')">
+            <div class="vehicle-badge">DISPONIBLE</div>
+            <div class="vehicle-overlay">
+              <button onclick="openWhatsApp('Hola, me interesa el Can-Am Defender HD10, ¿está disponible?')">Ver detalles</button>
+            </div>
+          </div>
+          <div class="vehicle-info">
+            <span class="vehicle-brand">Can-Am</span>
+            <h3 class="vehicle-name">Defender HD10</h3>
+            <div class="vehicle-specs">
+              <span>2022</span>
+              <span>82 HP</span>
+              <span>UTV</span>
+            </div>
+            <div class="vehicle-footer">
+              <span class="vehicle-price">Consultar precio</span>
+              <button class="btn-wa-small" onclick="openWhatsApp('Hola, me interesa el Can-Am Defender HD10 2022, ¿cuál es el precio?')">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Cotizar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- VEHÍCULO 6 -->
+        <div class="vehicle-card reveal-up" data-category="atv">
+          <div class="vehicle-img-wrap">
+            <img src="images/vehicle6.jpg" alt="Polaris Sportsman" onerror="this.parentElement.classList.add('no-img')">
+            <div class="vehicle-badge">DISPONIBLE</div>
+            <div class="vehicle-overlay">
+              <button onclick="openWhatsApp('Hola, me interesa el Polaris Sportsman 850, ¿cuál es el precio?')">Ver detalles</button>
+            </div>
+          </div>
+          <div class="vehicle-info">
+            <span class="vehicle-brand">Polaris</span>
+            <h3 class="vehicle-name">Sportsman 850</h3>
+            <div class="vehicle-specs">
+              <span>2021</span>
+              <span>78 HP</span>
+              <span>ATV</span>
+            </div>
+            <div class="vehicle-footer">
+              <span class="vehicle-price">Consultar precio</span>
+              <button class="btn-wa-small" onclick="openWhatsApp('Hola, me interesa el Polaris Sportsman 850 2021, ¿cuál es el precio?')">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Cotizar
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="inventory-cta reveal-up">
+        <p>¿No encuentras lo que buscas? Tenemos más vehículos disponibles.</p>
+        <a href="https://wa.me/523221003855?text=Hola%2C%20estoy%20buscando%20un%20veh%C3%ADculo%20off-road%2C%20%C2%BFqu%C3%A9%20tienen%20disponible%3F" target="_blank" class="btn-primary">Ver todo el inventario vía WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ ACCESORIOS / BANNER ═══════════════════════════ -->
+  <section id="accesorios" class="accesorios-section">
+    <div class="accesorios-bg">
+      <img src="images/accesorios-bg.JPG" alt="Accesorios Off Road" onerror="this.style.display='none'">
+      <div class="accesorios-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="accesorios-content reveal-up">
+        <span class="section-tag">Equipamiento</span>
+        <h2>LLEVA TU BEAST<br><span class="highlight">AL SIGUIENTE NIVEL</span></h2>
+        <p>Accesorios de alto rendimiento, llantas extremas y refacciones originales. Todo lo que necesitas en un solo lugar.</p>
+        <div class="accesorios-items">
+          <div class="acc-item">
+            <span class="acc-icon">🔦</span>
+            <span>LED Lights</span>
+          </div>
+          <div class="acc-item">
+            <span class="acc-icon">🛡️</span>
+            <span>Roll Cages</span>
+          </div>
+          <div class="acc-item">
+            <span class="acc-icon">🔊</span>
+            <span>Audio Systems</span>
+          </div>
+          <div class="acc-item">
+            <span class="acc-icon">⚙️</span>
+            <span>Suspensión</span>
+          </div>
+          <div class="acc-item">
+            <span class="acc-icon">🛞</span>
+            <span>Llantas Off-Road</span>
+          </div>
+          <div class="acc-item">
+            <span class="acc-icon">🪝</span>
+            <span>Winchs</span>
+          </div>
+        </div>
+        <a href="https://wa.me/523221003855?text=Hola%2C%20quiero%20ver%20el%20cat%C3%A1logo%20de%20accesorios" target="_blank" class="btn-primary">Ver Catálogo Completo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ NOSOTROS ═══════════════════════════ -->
+  <section id="nosotros" class="section-dark">
+    <div class="container">
+      <div class="nosotros-grid">
+        <div class="nosotros-img-wrap reveal-left">
+          <!-- Reemplaza images/garage.jpg con foto de tu garage/local -->
+          <img src="images/garage.jpg" alt="Pacific Off Road Garage" onerror="this.parentElement.classList.add('no-img-square')">
+          <div class="nosotros-img-badge">
+            <span class="badge-num">5+</span>
+            <span class="badge-txt">Años de<br>Experiencia</span>
+          </div>
+        </div>
+        <div class="nosotros-text reveal-right">
+          <span class="section-tag">Quiénes somos</span>
+          <h2 class="section-title">PASSION DRIVEN<br><span class="highlight">DIRT BUILT</span></h2>
+          <div class="title-line"></div>
+          <p>En <strong>Pacific Off Road Garage</strong> somos apasionados del off-road. Nacimos del trail, de la tierra, del polvo y la adrenalina. Eso nos hace entender mejor que nadie qué necesitas para dominar cualquier terreno.</p>
+          <p>Ofrecemos vehículos revisados y certificados, accesorios de alta calidad y el respaldo técnico que tu máquina merece. Y si no puedes venir a nosotros, <strong>nosotros vamos a ti.</strong></p>
+          <div class="nosotros-features">
+            <div class="feature-row">
+              <div class="feature-check">✓</div>
+              <span>Vehículos revisados y con garantía</span>
+            </div>
+            <div class="feature-row">
+              <div class="feature-check">✓</div>
+              <span>Técnicos certificados en Can-Am y Polaris</span>
+            </div>
+            <div class="feature-row">
+              <div class="feature-check">✓</div>
+              <span>Servicio a domicilio en toda la región</span>
+            </div>
+            <div class="feature-row">
+              <div class="feature-check">✓</div>
+              <span>Asesoría personalizada sin costo</span>
+            </div>
+            <div class="feature-row">
+              <div class="feature-check">✓</div>
+              <span>Atención directa por WhatsApp</span>
+            </div>
+          </div>
+          <a href="https://wa.me/523221003855?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20Pacific%20Off%20Road%20Garage" target="_blank" class="btn-primary">Conócenos en WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CONTACTO ═══════════════════════════ -->
+  <section id="contacto" class="section-darker">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Comunícate</span>
+        <h2 class="section-title">CONTÁCTANOS <span class="highlight">HOY</span></h2>
+        <div class="title-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-form-wrap reveal-left">
+          <form id="contactForm" onsubmit="submitToWhatsApp(event)">
+            <div class="form-group">
+              <label>Tu nombre</label>
+              <input type="text" id="contactName" placeholder="¿Cómo te llamas?" required>
+            </div>
+            <div class="form-group">
+              <label>Teléfono</label>
+              <input type="tel" id="contactPhone" placeholder="Tu número de WhatsApp" required>
+            </div>
+            <div class="form-group">
+              <label>¿Qué buscas?</label>
+              <select id="contactService">
+                <option value="vehículo">Vehículo usado</option>
+                <option value="accesorios">Accesorios</option>
+                <option value="llantas">Llantas</option>
+                <option value="refacciones">Refacciones</option>
+                <option value="mantenimiento a domicilio">Mantenimiento a domicilio</option>
+                <option value="asesoría general">Asesoría general</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Mensaje</label>
+              <textarea id="contactMsg" rows="4" placeholder="Cuéntanos más sobre lo que necesitas..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Enviar por WhatsApp
+            </button>
+          </form>
+        </div>
+        <div class="contact-info-wrap reveal-right">
+          <div class="contact-info-card">
+            <h3>¿Prefieres contactarnos directo?</h3>
+            <div class="contact-links">
+              <a href="https://wa.me/523221003855" target="_blank" class="contact-link-item">
+                <div class="contact-link-icon wa">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-link-label">WhatsApp</span>
+                  <span class="contact-link-value">322 100 3855</span>
+                </div>
+              </a>
+              <a href="https://www.facebook.com" target="_blank" class="contact-link-item">
+                <div class="contact-link-icon fb">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-link-label">Facebook</span>
+                  <span class="contact-link-value">Pacific Off Road Garage</span>
+                </div>
+              </a>
+            </div>
+            <div class="horario-box">
+              <h4>Horario de atención</h4>
+              <div class="horario-row"><span>Lunes — Sábado</span><span>9:00 AM – 7:00 PM</span></div>
+              <div class="horario-row"><span>Domingo</span><span>10:00 AM – 3:00 PM</span></div>
+              <div class="horario-note">* Servicio a domicilio con cita previa</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo footer-logo">
+            <span class="logo-icon">⚙</span>
+            <div class="logo-text">
+              <span class="logo-main">PACIFIC</span>
+              <span class="logo-sub">OFF ROAD GARAGE</span>
+            </div>
+          </a>
+          <p>Expertos en vehículos todo terreno. Can-Am, Polaris RZR, ATVs, UTVs y más. Venta, accesorios, refacciones y servicio a domicilio.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#inventario">Inventario</a></li>
+            <li><a href="#accesorios">Accesorios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#inventario">Vehículos Usados</a></li>
+            <li><a href="#accesorios">Accesorios Nuevos</a></li>
+            <li><a href="#servicios">Llantas Off-Road</a></li>
+            <li><a href="#servicios">Refacciones</a></li>
+            <li><a href="#servicios">Mantenimiento a Domicilio</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contacto rápido</h4>
+          <a href="https://wa.me/523221003855" target="_blank" class="footer-wa-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            322 100 3855
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2025 Pacific Off Road Garage — Todos los derechos reservados</span>
+        <span>Diseñado para los que no siguen caminos</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════ CHATBOT WHATSAPP ═══════════════════════════ -->
+  <div class="chatbot-container" id="chatbot">
+    <div class="chatbot-bubble" id="chatbotBubble">
+      <div class="chatbot-header">
+        <div class="chatbot-avatar">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </div>
+        <div class="chatbot-header-info">
+          <span class="chatbot-name">Pacific Off Road</span>
+          <span class="chatbot-status"><span class="status-dot"></span> En línea</span>
+        </div>
+        <button class="chatbot-close" id="chatbotClose" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="chatbot-body">
+        <div class="chat-msg bot-msg">
+          <p>¡Hola! Soy el asistente de <strong>Pacific Off Road Garage</strong>. ¿Con qué te puedo ayudar hoy? 🤙</p>
+        </div>
+        <div class="chat-options">
+          <button class="chat-opt-btn" onclick="openWhatsApp('Hola, quiero información sobre vehículos usados disponibles')">🚗 Ver vehículos disponibles</button>
+          <button class="chat-opt-btn" onclick="openWhatsApp('Hola, quiero ver accesorios y refacciones disponibles')">⚙️ Accesorios y refacciones</button>
+          <button class="chat-opt-btn" onclick="openWhatsApp('Hola, quiero agendar un servicio de mantenimiento a domicilio')">🔧 Mantenimiento a domicilio</button>
+          <button class="chat-opt-btn" onclick="openWhatsApp('Hola, quiero ver las llantas off-road disponibles')">🛞 Llantas off-road</button>
+          <button class="chat-opt-btn" onclick="openWhatsApp('Hola, necesito asesoría para elegir un vehículo')">💬 Necesito asesoría</button>
+        </div>
+      </div>
+      <div class="chatbot-footer">
+        <span>Responde vía WhatsApp en minutos</span>
+      </div>
+    </div>
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Abrir chat">
+      <span class="toggle-open">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </span>
+      <span class="toggle-close" style="display:none">✕</span>
+      <span class="chatbot-notif" id="chatbotNotif">1</span>
+    </button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
