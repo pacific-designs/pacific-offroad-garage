@@ -3,8 +3,27 @@
    ══════════════════════════════════════════════ */
 
 const WA_NUMBER = '523221003855';
+const WEB3FORMS_KEY = 'TU_ACCESS_KEY_WEB3FORMS'; // Reemplaza con tu clave de web3forms.com
+
+async function sendEmailNotification(interestMsg) {
+  try {
+    await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_KEY,
+        subject: '¡Nuevo interesado en Pacific Off Road Garage!',
+        from_name: 'Sitio Web Pacific Off Road',
+        message: `Alguien hizo clic en el sitio web mostrando interés.\n\nDetalle: ${interestMsg}\n\nRevisa tu WhatsApp para ver el mensaje del cliente.`
+      })
+    });
+  } catch (e) {
+    // No interrumpir la experiencia del usuario si el email falla
+  }
+}
 
 function openWhatsApp(message) {
+  sendEmailNotification(message);
   const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
   window.open(url, '_blank');
 }
